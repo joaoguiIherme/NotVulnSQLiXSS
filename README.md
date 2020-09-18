@@ -9,6 +9,8 @@ Application with login page to test SQL Injection and comment comment session to
 
 	* Run the server
 		-> python manage.py runserver
+				or
+		-> python3 manage.py runserver
 
 ### How to use
 	1. It's simple. First page is a login page where you can test SQLi commands.
