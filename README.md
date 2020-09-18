@@ -13,14 +13,19 @@ Application with login page to test SQL Injection and comment comment session to
 		-> python3 manage.py runserver
 
 ### How to use
-	1. It's simple. First page is a login page where you can test SQLi commands.
-	2. Login with one of this users:  	________________________________________________
-						|	Login		|	Password	|
-						|_______________________|_______________________|
-						|	joao		|senhamuitoforte	|
-						|	lucas		|senhamaisforte123	|
-						|	zeduardo	|maisforteainda321	|
-						|	ana		|supersenhadana		|
-						|_______________________|_______________________|
+	1. First you have to create a superuser, so you can create another normal users. Disable the server and run:
+		-> python3 manage.py createsuperuser
+			-> Enter the superuser name
+			-> Enter the email (not required)
+			-> Enter password then again to confirm
 
-	3. At the comment session, you can try XSS commands to test the application.
+		-> python3 manage.py migrate
+
+	2. Now run the server again:
+		-> python3 manage.py runserver
+	
+	3. Navigate to the url 127.0.0.1:8000 or if you want to add another users: 127.0.0.1:8000/admin
+
+	4. Now it's simple! First page is a login page where you can test SQLi commands. 
+
+	5. After logged in, a comment session will show up. Now, you can try XSS commands to test the application.
