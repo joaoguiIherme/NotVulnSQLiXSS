@@ -1,5 +1,5 @@
 # NotVulnSQLiXSS
-Application with login page to test SQL Injection and comment comment session to test Cross-Site Scripting for the third project of Systems Security's subject.
+Application with login page to test SQL Injection and comment comment session to test Cross-Site Scripting for the third project of Systems Security subject.
 
 ### Installation
 	* Install dependencies
