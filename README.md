@@ -1,7 +1,7 @@
-# NotVulnSQLiXSS
-Application with login page to test SQL Injection and comment comment session to test Cross-Site Scripting for the third project of Systems Security subject.
+# NotVulnSQLiXSS :zany_face:
+Application with login page to test SQL Injection and comment session to test Cross-Site Scripting for the third project of Systems Security subject.
 
-### Installation
+### Installation :cold_face:
 	* Install dependencies
 		-> pip install -r requirements.txt
 				or
@@ -12,7 +12,8 @@ Application with login page to test SQL Injection and comment comment session to
 				or
 		-> python3 manage.py runserver
 
-### How to use
+### How to use :sunglasses:
+
 	1. First you have to create a superuser, so you can create another normal users. Disable the server and run:
 		-> python3 manage.py createsuperuser
 			-> Enter the superuser name
