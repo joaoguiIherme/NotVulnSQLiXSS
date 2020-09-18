@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Posts</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        
+    </head>
+    <body>
+
+        <h1>LOGADO!</h1>
+        <a href="/logout/">Sair</a>
+
+        <form action="submit" method="POST">{% csrf_token %}
+            <h2>Comentários</h2>
+            <div class="content container">
+                <div class="row">
+                    <div class="col-md-8">
+                    {% for post in posts %}
+                        <div class="post">
+                            <strong>{{ post.user }}</strong>
+                            <div class="date">
+                                <p>{{ post.published_date }}</p>
+                            </div>
+                            <h1><a href="">{{ post.title }}</a></h1>
+                            <p>{{ post.text|linebreaksbr }}</p>
+                        </div>
+                    {% endfor %}
+                    </div>
+                </div>
+            </div>
+            
+            
+            <label for="comment">Comment:</label>
+            <input class="form-control" name="text" type="text">
+            <button type="submit" class="btn btn-primary">Postar</button>
+        </form>
+
+    </body>
+</html>
