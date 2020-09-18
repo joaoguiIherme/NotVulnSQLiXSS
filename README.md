@@ -1,7 +1,7 @@
 # NotVulnSQLiXSS :man_technologist:
 Application with login page to test SQL Injection and comment session to test Cross-Site Scripting for the third project of Systems Security subject.
 
-### Installation :cold_face:
+### Installation :hammer_and_wrench:
 	* Install dependencies
 		-> pip install -r requirements.txt
 				or
@@ -12,7 +12,7 @@ Application with login page to test SQL Injection and comment session to test Cr
 				or
 		-> python3 manage.py runserver
 
-### How to use :sunglasses:
+### How to use :keyboard:
 
 	1. First you have to create a superuser, so you can create another normal users. Disable the server and run:
 		-> python3 manage.py createsuperuser
