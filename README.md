@@ -1,4 +1,4 @@
-# NotVulnSQLiXSS :zany_face:
+# NotVulnSQLiXSS :man_technologist:
 Application with login page to test SQL Injection and comment session to test Cross-Site Scripting for the third project of Systems Security subject.
 
 ### Installation :cold_face:
