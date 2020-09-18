@@ -2,19 +2,19 @@
 Application with login page to test SQL Injection and comment session to test Cross-Site Scripting for the third project of Systems Security subject.
 
 ### Installation :hammer_and_wrench:
-	* Install dependencies
+	* Install the dependencies:
 		-> pip install -r requirements.txt
 				or
 		-> pip3 install -r requirements.txt
 
-	* Run the server
+	* To run the server:
 		-> python manage.py runserver
 				or
 		-> python3 manage.py runserver
 
 ### How to use :keyboard:
 
-	1. First you have to create a superuser, so you can create another normal users. Disable the server and run:
+	1. First you have to create a superuser, so you can create others normal users. Disable the server and run:
 		-> python3 manage.py createsuperuser
 			-> Enter the superuser name
 			-> Enter the email (not required)
@@ -25,7 +25,7 @@ Application with login page to test SQL Injection and comment session to test Cr
 	2. Now run the server again:
 		-> python3 manage.py runserver
 	
-	3. Navigate to the url 127.0.0.1:8000 or if you want to add another users: 127.0.0.1:8000/admin
+	3. Navigate to the url 127.0.0.1:8000 or if you want to add another user: 127.0.0.1:8000/admin
 
 	4. Now it's simple! First page is a login page where you can test SQLi commands. 
 
